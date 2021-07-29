@@ -327,7 +327,7 @@ header {
 
 .services-images {
   display: flex;
-  justify-content: space-between;
+
   padding-left: 0;
   margin-right: -30px;
   margin-bottom: -30px;
@@ -338,6 +338,30 @@ header {
 
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.thumb {
+  position: relative;
+}
+
+.services-images-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.services-images-text p {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* ============== Services ============== */
@@ -419,6 +443,9 @@ header {
 .clients-title {
   margin-bottom: 50px;
   text-align: center;
+  color: var(--primery-text-color);
+  font-size: 36px;
+  line-height: 1.16;
 }
 
 .clients .clients-list-list {
