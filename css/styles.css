@@ -85,10 +85,9 @@ header {
 
 .header-container {
   display: flex;
-  height: 80px;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -236,15 +235,12 @@ header {
   margin-bottom: 30px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-section {
   max-width: 700px;
   margin: 0 auto;
-}
-
-.button-section {
-  margin-top: 30px;
 }
 
 .button {
@@ -276,25 +272,45 @@ header {
 
 /* ============== Services ============== */
 
+.services-title-hidden,
+.work-title,
+.team-title,
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: black;
+}
+
 .services-section {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 47px;
+}
+
+.services-list-title {
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
 }
 
 .services-list {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-bottom: 94px;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .services-list-item {
-  max-width: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 120px) / 4);
 
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.services-list-text {
+  margin-top: 10px;
 }
 
 .services-item-block {
@@ -307,46 +323,32 @@ header {
   height: 120px;
 }
 
-.services-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  color: var(--primery-text-color);
+/* ============== work ============== */
 
-  margin-bottom: 10px;
-}
-
-.services-text {
-  line-height: 1.7;
-}
-
-.services-images-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--primery-text-color);
-  margin-bottom: 50px;
-}
-
-.services-images {
+.work-list {
   display: flex;
-  padding-left: 0;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
-.services-images-item {
-  max-width: calc((100% - 90px) / 3);
+.work-list-item {
+  flex-basis: calc((100% - 90px) / 3);
 
   margin-right: 30px;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
-.thumb {
+.work-images {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.work-thumb {
   position: relative;
 }
 
-.services-images-text {
+.work-text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -355,7 +357,7 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.services-images-text p {
+.work-text p {
   padding-top: 27px;
   padding-bottom: 27px;
   font-weight: 700;
@@ -363,10 +365,10 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 }
 
-/* ============== Services ============== */
+/* ============== team ============== */
 
 .team-section {
   background-color: #f5f4fa;
@@ -391,10 +393,6 @@ header {
   margin-bottom: 30px;
 }
 
-.team-content {
-  margin-top: 15px;
-}
-
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -409,7 +407,8 @@ header {
   line-height: 1.17;
   text-align: center;
   color: var(--primery-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 .team-job {
@@ -422,11 +421,6 @@ header {
 .social-links-group {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
-
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .social-link-item {
@@ -439,10 +433,6 @@ header {
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  flex-basis: calc((100% - 1020px) / 6);
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .social-link-item:hover,
@@ -490,10 +480,6 @@ header {
 
 .footer {
   background-color: var(--special-background);
-}
-
-.foot-container {
-  height: 252px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -662,8 +648,12 @@ header {
   margin-bottom: -30px;
 }
 
+.portfolio-content {
+  padding-top: 20px;
+}
+
 .card-set-item {
-  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 30px;
   max-width: calc((100%-60px) / 3);
   padding-left: 0px;
@@ -738,7 +728,7 @@ header {
   color: #757575;
 }
 
-/* modal*/
+/* ============== modal ============== */
 
 .modal {
   position: absolute;
