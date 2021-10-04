@@ -411,6 +411,11 @@ header {
   color: var(--primery-text-color);
 }
 
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -418,19 +423,22 @@ header {
   text-align: center;
   color: var(--primery-text-color);
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 
 .team-job {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
-  padding-bottom: 16px;
 }
 
 .social-links-group {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-group-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link-item {
@@ -462,6 +470,8 @@ header {
 .clients .clients-list {
   display: flex;
   justify-content: space-between;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .clients-list-item {
@@ -716,9 +726,9 @@ header {
 }
 
 .portfolio-image {
+  display: block;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .portfolio-image-text {
