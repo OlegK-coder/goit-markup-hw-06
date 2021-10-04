@@ -86,8 +86,8 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -310,6 +310,14 @@ header {
 }
 
 .services-list-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+
   margin-top: 10px;
 }
 
@@ -325,6 +333,10 @@ header {
 
 /* ============== work ============== */
 
+.work-title {
+  margin-bottom: 50px;
+}
+
 .work-list {
   display: flex;
   margin-right: -30px;
@@ -336,7 +348,6 @@ header {
 
   margin-right: 30px;
   margin-bottom: 30px;
-  margin-top: 50px;
 }
 
 .work-images {
@@ -398,7 +409,6 @@ header {
   line-height: 1.16;
   text-align: center;
   color: var(--primery-text-color);
-  margin-bottom: 50px;
 }
 
 .team-member {
@@ -415,7 +425,7 @@ header {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .social-links-group {
@@ -449,13 +459,16 @@ header {
   line-height: 1.16;
 }
 
-.clients .clients-list-list {
+.clients .clients-list {
   display: flex;
   justify-content: space-between;
 }
 
 .clients-list-item {
-  display: flex;
+  display: block;
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .clients-list-link {
@@ -612,6 +625,9 @@ header {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
+}
+
+.portfolio-filter-buttons-list {
   margin-bottom: 50px;
 }
 
@@ -644,12 +660,13 @@ header {
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: -30px;
   margin-bottom: -30px;
 }
 
 .portfolio-content {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card-set-item {
@@ -680,6 +697,8 @@ header {
   border-right: 1px solid #eeeeee;
   border-top: 0;
   border-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-text {
@@ -692,6 +711,8 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-top: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-image {
