@@ -128,7 +128,8 @@ header {
   line-height: 1.14;
   color: #212121;
   text-decoration: none;
-
+  padding-top: 32px;
+  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
