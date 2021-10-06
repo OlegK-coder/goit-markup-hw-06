@@ -59,7 +59,7 @@
         <div class="container portfolio-buttons-container">
             <div class="portfolio-filter-buttons-list">
             <ul class="portfolio-filter-buttons list">
-                <li><button class="button filter-button" type="button">Все</button></li>
+                <li><button class="filter-button" type="button">Все</button></li>
                 <li><button class="filter-button" type="button">Веб-сайты</button></li>
                 <li><button class="filter-button" type="button">Приложения</button></li>
                 <li><button class="filter-button" type="button">Дизайн</button></li>
@@ -274,63 +274,17 @@
             <form class="footer-contacts-form-field">
                 <input class="footer-contacts-form-input" type="email" name="user-email" placeholder="E-mail">
                 <div class="footer-contacts-button">
-                    <button type="submit" class="footer-button button hero-button">Подписаться</button>
-                    <svg class="footer-button-icon" width="24" height="24">
-                        <use href="./img/icons.svg#icon-icon-send"></use>
-                    </svg>
+                    <button type="submit" class="footer-button button hero-button">
+                        <svg class="footer-button-icon" width="24" height="24">
+                            <use href="./img/icons.svg#icon-icon-send"></use>
+                        </svg>Подписаться</button>
+                    
                 </div>
             </form>
         </div>
     </div>
 </footer>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-            <svg class="close-btn" width="11" height="11">
-                <use href="./img/icons.svg#icon-close-btn"></use>
-            </svg>
-        </button>
-        <p class="modal-form-head-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form">
-            <label class="modal-form-field">Имя
-                <span class="modal-form-input-wraper">
-                    <input type="text" name="user-name" class="modal-form-input" required>
-                    <svg class="modal-form-icon" width="12" height="12">
-                        <use href="./img/icons.svg#icon-form-person"></use>
-                    </svg>
-                </span>
-            </label>
-            <label class="modal-form-field">Телефон
-                <span class="modal-form-input-wraper">
-                    <input type="tel" name="user-tel" class="modal-form-input" required>
-                    <svg class="modal-form-icon" width="13" height="13">
-                        <use href="./img/icons.svg#icon-form-phone"></use>
-                    </svg>
-                </span>
-            </label>
-            <label class="modal-form-field">Почта
-                <span class="modal-form-input-wraper">
-                    <input type="email" name="user-email" class="modal-form-input" required>
-                    <svg class="modal-form-icon" width="15" height="12">
-                        <use href="./img/icons.svg#icon-form-envelope"></use>
-                    </svg>
-                </span>
-            </label>
-            <label class="modal-form-field">Комментарий
-                <textarea name="user-comment" id="valid" class="modal-form-comment" placeholder="Введите текст"></textarea>
-            </label>
-            <div class="modal-form-checkbox">
-                <input type="checkbox" name="user-checkbox" id="modal-policy"
-                    class="modal-form-checkbox-icon visually-hidden">
-                <label class="modal-form-policy" for="modal-policy">
-                    Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-form-policy-link" href="">Условия
-                        договора</a>
-                </label>
-            </div>
-            <button type="submit" class="modal-form-button button primary">Отправить</button>
-        </form>
-    </div>
-</div>
+
 
 
     </body>
